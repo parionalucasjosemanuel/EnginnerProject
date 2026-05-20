@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+<link
+        rel="icon"
+        type="image/x-icon"
+        href="./assets/icons/logo.ico"
+    />
+<div class="logo-container">
+
+    <img
+        src="./assets/logo/practice.png"
+        alt="CodePulse Campus Logo"
+        class="main-logo"
+    />
+
+</div>
+    <title>Practice | ALGORYTHRA Campus</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/practice.css"
+    >
+<link rel="stylesheet" href="./css/theme.css">
+<script src="./js/themeManager.js" defer></script>
+</head>
+
+<body data-page="practice">
+<!-- 🌗 BOTÓN DE TEMA -->
+<button id="themeToggleBtn" class="theme-toggle-btn"></button>
+<!-- 🔝 NAVEGACIÓN GLOBAL (AISLADA) -->
+<style>
+/* 🔒 Prefijo único para evitar conflictos */
+.gnav-container {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+}
+
+/* SOLO afecta a elementos dentro de gnav */
+.gnav-container .gnav-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover aislado */
+.gnav-container .gnav-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+/* Responsive aislado */
+@media (max-width: 600px) {
+    .gnav-container .gnav-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
+</style>
+<div class="gnav-container">
+    <a href="index.html" class="gnav-btn">🏠 Inicio</a>
+    <a href="dashboard.html" class="gnav-btn">📊 Dashboard</a>
+    
+</div>
+    
+
+        <main class="practice-main">
+
+            <section class="practice-header">
+
+                <h1>
+                    Programming Practice Arena
+                </h1>
+
+                <p>
+                    Solve problems and analyze your coding logic.
+                </p>
+
+            </section>
+
+            <section class="practice-form-container">
+
+                <form id="practiceForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Programming Language
+                            </label>
+
+                            <select id="language">
+
+                                <option value="Python">
+                                    Python
+                                </option>
+
+                                <option value="Java">
+                                    Java
+                                </option>
+
+                                <option value="C++">
+                                    C++
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                Topic
+                            </label>
+
+                            <select id="topic">
+
+                                <option value="Arrays">
+                                    Arrays
+                                </option>
+
+                                <option value="Recursion">
+                                    Recursion
+                                </option>
+
+                                <option value="Graphs">
+                                    Graphs
+                                </option>
+
+                                <option value="Dynamic Programming">
+                                    Dynamic Programming
+                                </option>
+
+                                <option value="Sorting">
+                                    Sorting
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Study Time (minutes)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="studyTime"
+                                min="1"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                Difficulty Score
+                            </label>
+
+                            <input
+                                type="number"
+                                id="difficultyScore"
+                                min="1"
+                                max="10"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+                            Source Code
+                        </label>
+
+                        <textarea
+                            id="sourceCode"
+                            placeholder="Paste your code here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Analyze Code
+                    </button>
+                    
+
+                </form>
+
+            </section>
+<section class="practice-stats-bar">
+
+    <div class="stat-mini">
+        <span>🔥 Session XP</span>
+        <strong id="xpGain">0</strong>
+    </div>
+
+    <div class="stat-mini">
+        <span>⚡ Efficiency</span>
+        <strong id="efficiencyScore">0%</strong>
+    </div>
+
+    <div class="stat-mini">
+        <span>🧠 Code Quality</span>
+        <strong id="qualityScore">0</strong>
+    </div>
+
+    <div class="stat-mini">
+        <span>📈 IPL Impact</span>
+        <strong id="iplImpact">0</strong>
+    </div>
+
+</section>
+            <section class="analysis-results">
+
+                <div class="result-card">
+
+                    <h3>
+                        Estimated Complexity
+                    </h3>
+
+                    <p id="complexityResult">
+                        -
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>
+                        Modularity Score
+                    </h3>
+
+                    <p id="modularityResult">
+                        -
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>
+                        Loops Detected
+                    </h3>
+
+                    <p id="loopsResult">
+                        -
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>
+                        Recommendations
+                    </h3>
+
+                    <ul id="recommendationsResult">
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+<!-- ========================================= -->
+<!-- 🌐 CISCO PACKET TRACER QUIZ SYSTEM -->
+<!-- ========================================= -->
+
+<section class="cisco-quiz-section">
+
+    <div class="quiz-main-title">
+        <h2>🌐 Cisco Packet Tracer Challenge</h2>
+        <p>
+            Test your networking knowledge with Easy, Medium and Hard quizzes.
+        </p>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- EASY MODE -->
+    <!-- ========================================= -->
+
+    <div class="quiz-mode easy-mode">
+
+        <div class="mode-header">
+            <h3>🟢 Easy Mode</h3>
+            <span>5 Questions</span>
+        </div>
+
+        <!-- QUESTION 1 -->
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q1.jpg"
+                class="quiz-image"
+            >
+
+            <h4>
+                1. Which device connects multiple computers inside a LAN?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option correct">
+                    <input type="radio" name="easy1">
+                    Switch
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy1">
+                    Printer
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy1">
+                    Mouse
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy1">
+                    Monitor
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Switch
+            </div>
+
+            <div class="quiz-explanation">
+                A switch allows devices inside a Local Area Network to communicate efficiently.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 2 -->
+
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q2.jpg"
+                class="quiz-image"
+            >
+
+            <h4>
+                2. Which cable is commonly used between a PC and a Switch?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option correct">
+                    <input type="radio" name="easy2">
+                    Straight-through cable
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy2">
+                    Fiber cable
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy2">
+                    HDMI cable
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy2">
+                    Power cable
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Straight-through cable
+            </div>
+
+            <div class="quiz-explanation">
+                Straight-through cables connect different device types like PC to Switch.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 3 -->
+
+        <div class="quiz-card">
+
+           
+
+            <h4>
+                3. Which layer of the OSI model handles IP addresses?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="easy3">
+                    Physical
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy3">
+                    Data Link
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="easy3">
+                    Network
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy3">
+                    Session
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Network Layer
+            </div>
+
+            <div class="quiz-explanation">
+                The Network Layer handles logical addressing and routing using IP.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 4 -->
+
+        <div class="quiz-card">
+
+           
+
+            <h4>
+                4. Which protocol is used to browse websites?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="easy4">
+                    FTP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy4">
+                    SSH
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="easy4">
+                    HTTP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy4">
+                    SMTP
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: HTTP
+            </div>
+
+            <div class="quiz-explanation">
+                HTTP is the protocol browsers use to access websites.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 5 -->
+
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q3.jpeg"
+                class="quiz-image"
+            >
+
+            <h4>
+                5. What does LAN stand for?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option correct">
+                    <input type="radio" name="easy5">
+                    Local Area Network
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy5">
+                    Long Access Node
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy5">
+                    Logical Access Network
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="easy5">
+                    Link Area Node
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Local Area Network
+            </div>
+
+            <div class="quiz-explanation">
+                LAN means Local Area Network and connects devices in a limited area.
+            </div>
+
+        </div>
+
+        <button class="quiz-finish-btn">
+            Finish Easy Mode (+50 XP)
+        </button>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MEDIUM MODE -->
+    <!-- ========================================= -->
+
+    <div class="quiz-mode medium-mode">
+
+        <div class="mode-header">
+            <h3>🟡 Medium Mode</h3>
+            <span>5 Questions</span>
+        </div>
+
+        <!-- QUESTION 6 -->
+
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q6.png"
+                class="quiz-image"
+            >
+
+            <h4>
+                6. Which protocol dynamically assigns IP addresses?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="medium1">
+                    DNS
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="medium1">
+                    DHCP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium1">
+                    FTP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium1">
+                    Telnet
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: DHCP
+            </div>
+
+            <div class="quiz-explanation">
+                DHCP automatically provides IP addresses to devices.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 7 -->
+
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q7.jpg"
+                class="quiz-image"
+            >
+
+            <h4>
+                7. What command checks connectivity between two devices?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="medium2">
+                    show ip
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="medium2">
+                    ping
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium2">
+                    reboot
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium2">
+                    clear
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: ping
+            </div>
+
+            <div class="quiz-explanation">
+                Ping sends ICMP packets to verify network connectivity.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 8 -->
+
+        <div class="quiz-card">
+
+            
+
+            <h4>
+                8. Which device routes traffic between networks?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="medium3">
+                    Hub
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="medium3">
+                    Router
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium3">
+                    Access Point
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium3">
+                    Keyboard
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Router
+            </div>
+
+            <div class="quiz-explanation">
+                Routers connect different networks and forward packets.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 9 -->
+
+        <div class="quiz-card">
+
+           
+            <h4>
+                9. Which topology uses a central switch?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="medium4">
+                    Bus
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="medium4">
+                    Star
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium4">
+                    Ring
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium4">
+                    Mesh
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: Star
+            </div>
+
+            <div class="quiz-explanation">
+                Star topology connects all devices to one central device.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 10 -->
+
+        <div class="quiz-card">
+
+            
+
+            <h4>
+                10. Which protocol translates domain names into IP addresses?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="medium5">
+                    DHCP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium5">
+                    HTTP
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="medium5">
+                    DNS
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="medium5">
+                    FTP
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: DNS
+            </div>
+
+            <div class="quiz-explanation">
+                DNS converts readable domain names into IP addresses.
+            </div>
+
+        </div>
+
+        <button class="quiz-finish-btn">
+            Finish Medium Mode (+100 XP)
+        </button>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- HARD MODE -->
+    <!-- ========================================= -->
+
+    <div class="quiz-mode hard-mode">
+
+        <div class="mode-header">
+            <h3>🔴 Hard Mode</h3>
+            <span>5 Questions</span>
+        </div>
+
+        <!-- QUESTION 11 -->
+
+        <div class="quiz-card">
+
+            <img
+                src="./assets/imagenes/Q11.png"
+                class="quiz-image"
+            >
+
+            <h4>
+                11. Which routing protocol uses hop count as metric?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option correct">
+                    <input type="radio" name="hard1">
+                    RIP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard1">
+                    OSPF
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard1">
+                    EIGRP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard1">
+                    BGP
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: RIP
+            </div>
+
+            <div class="quiz-explanation">
+                RIP measures routes using hop count.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 12 -->
+
+        <div class="quiz-card">
+
+
+            <h4>
+                12. What is the default port for HTTPS?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="hard2">
+                    21
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard2">
+                    22
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="hard2">
+                    443
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard2">
+                    8080
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: 443
+            </div>
+
+            <div class="quiz-explanation">
+                HTTPS encrypts web traffic using port 443.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 13 -->
+
+        <div class="quiz-card">
+
+            
+
+            <h4>
+                13. Which command displays router interfaces?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="hard3">
+                    ping
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="hard3">
+                    show ip interface brief
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard3">
+                    erase startup-config
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard3">
+                    reload
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: show ip interface brief
+            </div>
+
+            <div class="quiz-explanation">
+                That command shows interface status and IP addresses.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 14 -->
+
+        <div class="quiz-card">
+
+           
+
+            <h4>
+                14. Which protocol secures remote CLI access?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="hard4">
+                    Telnet
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="hard4">
+                    SSH
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard4">
+                    FTP
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard4">
+                    SNMP
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: SSH
+            </div>
+
+            <div class="quiz-explanation">
+                SSH encrypts remote access communications securely.
+            </div>
+
+        </div>
+
+        <!-- QUESTION 15 -->
+
+        <div class="quiz-card">
+
+           
+
+            <h4>
+                15. Which subnet mask belongs to a /24 network?
+            </h4>
+
+            <div class="quiz-options">
+
+                <label class="option">
+                    <input type="radio" name="hard5">
+                    255.0.0.0
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard5">
+                    255.255.0.0
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="hard5">
+                    255.255.255.0
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="hard5">
+                    255.255.255.255
+                </label>
+
+            </div>
+
+            <div class="quiz-answer correct-answer">
+                ✅ Correct Answer: 255.255.255.0
+            </div>
+
+            <div class="quiz-explanation">
+                A /24 network contains 24 bits for the network portion.
+            </div>
+
+        </div>
+
+        <button class="quiz-finish-btn">
+            Finish Hard Mode (+200 XP)
+        </button>
+
+    </div>
+
+</section>
+    <script src="./js/practice.js"></script>
+
+<!-- 🤖 CHATBOT SYSTEM --> <link rel="stylesheet" href="./css/stylesChatbot.css"> <script src="./js/scriptChatbot.js" defer></script> <!-- BOTÓN --> <div id="chatbotBtn" class="chatbot-float-btn"> <img src="./assets/imagenes/chatbot.jpg" /> </div> <!-- MODAL --> <div id="chatbotModal" class="chatbot-modal"> <div class="chatbot-box"> <h2>Select Language</h2> <button class="chatbot-lang-btn" data-lang="es">Español</button> <button class="chatbot-lang-btn" data-lang="en">English</button> <div id="closeModal" class="chatbot-close">✖ Close</div> </div> <div style="display:flex;gap:10px;padding:10px;background:#111;"> <button id="chatbotMute">🔇</button> <button id="chatbotReplay">🔁</button> <select id="chatbotSpeed"> <option value="0.8">0.8x</option> <option value="1" selected>1x</option> <option value="1.2">1.2x</option> <option value="1.5">1.5x</option> </select> </div> </div> <!-- CHAT --> <div id="chatbotChat" class="chatbot-chat"> <div class="chatbot-header">🤖 ALGORYTHRA Assistant</div> <div id="chatbotBody" class="chatbot-body"></div> </div>    
+</body>
+
+</html>

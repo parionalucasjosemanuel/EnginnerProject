@@ -1,0 +1,173 @@
+/* =========================================
+   ANIMATIONS SYSTEM — PREMIUM UX MOTION
+   ========================================= */
+
+/* =========================================
+   🎬 CORE REUSABLE ANIMATIONS
+   ========================================= */
+
+/* 🔹 FADE IN SUAVE (ENTRADA GENERAL) */
+.fade-in {
+    animation: fadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: opacity, transform;
+}
+
+/* 🔹 SLIDE UP (SECCIONES IMPORTANTES) */
+.slide-up {
+    animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: opacity, transform;
+}
+
+/* 🔹 SCALE IN (CARDS / MODALS) */
+.scale-in {
+    animation: scaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+/* 🔹 ROTATION SOFT (ICONOS / BADGES) */
+.rotate-in {
+    animation: rotateIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+/* =========================================
+   🌊 MICRO ANIMATIONS (UI PREMIUM FEEL)
+   ========================================= */
+
+/* 🔹 FLOAT SUAVE (DECORATIVO / HERO ELEMENTS) */
+.float-animation {
+    animation: floating 5s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* 🔹 GLOW CONTROLADO (NO EXCESIVO) */
+.glow-animation {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* =========================================
+   ✨ KEYFRAMES — CLEAN & SMOOTH
+   ========================================= */
+
+/* FADE IN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SLIDE UP */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCALE IN */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ROTATE IN */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-6deg) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* FLOATING (MUY SUAVE, NATURAL) */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* GLOW (SOFT PREMIUM, NO NEÓN EXAGERADO) */
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 0 rgba(99, 102, 241, 0);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(99, 102, 241, 0.25);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(99, 102, 241, 0);
+    }
+}
+
+/* =========================================
+   ⚡ HOVER SYSTEM (UI MODERNA REAL)
+   ========================================= */
+
+/* 🔹 ELEMENTOS INTERACTIVOS */
+.hover-lift {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+}
+
+/* 🔹 SCALE SUAVE */
+.hover-scale {
+    transition: transform 0.25s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* 🔹 OPACITY SOFT */
+.hover-fade {
+    transition: opacity 0.25s ease;
+}
+
+.hover-fade:hover {
+    opacity: 0.85;
+}
+
+/* =========================================
+   📱 PERFORMANCE (IMPORTANTE)
+   ========================================= */
+
+/* Reduce motion para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-up,
+    .scale-in,
+    .rotate-in,
+    .float-animation,
+    .glow-animation {
+        animation: none !important;
+        transform: none !important;
+    }
+}

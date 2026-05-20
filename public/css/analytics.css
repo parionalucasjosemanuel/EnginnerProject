@@ -1,0 +1,78 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* ===== CONTAINER ===== */
+.analytics-container {
+    padding: 40px;
+}
+
+/* ===== HEADER ===== */
+.analytics-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.analytics-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.analytics-header p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* ===== GRID (UNO DEBAJO DEL OTRO) ===== */
+.analytics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* ===== CARDS ===== */
+.analytics-card {
+     overflow-x: auto;
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 18px;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+    height: 400px; /* 🔥 más grande */
+}
+
+/* ===== TITLES ===== */
+.analytics-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+/* ===== CANVAS ===== */
+.analytics-card canvas {
+      min-width: 800px;
+    margin-top: 20px;
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .analytics-container {
+        padding: 20px;
+    }
+
+    .analytics-header h1 {
+        font-size: 32px;
+    }
+}
+

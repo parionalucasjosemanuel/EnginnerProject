@@ -1,0 +1,245 @@
+/* =========================
+   🌐 GLOBAL THEME SYSTEM
+   ========================= */
+
+:root {
+
+    /* DARK (DEFAULT) */
+    --bg-main: #0f172a;
+    --bg-card: #1e293b;
+    --bg-soft: #111827;
+
+    --text-main: #ffffff;
+    --text-secondary: #94a3b8;
+
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --accent: #38bdf8;
+
+    --border: rgba(255,255,255,0.08);
+    --shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   ☀️ LIGHT MODE
+   ========================= */
+
+.light-theme {
+
+    --bg-main: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-soft: #e2e8f0;
+
+    --text-main: #0f172a;
+    --text-secondary: #475569;
+
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --accent: #0ea5e9;
+
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   RESET GLOBAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: "Segoe UI", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   🧱 CONTAINERS
+   ========================= */
+
+.analytics-container,
+.practice-main,
+.leaderboard-container,
+.page-container,
+.profile-container,
+.notifications-container,
+.activity-container {
+    padding: 90px 20px 40px;
+}
+
+/* =========================
+   🧾 CARDS
+   ========================= */
+
+.kpi,
+.analytics-card,
+.result-card,
+.profile-card,
+.activity-card,
+.stat,
+.stat-mini {
+    background: var(--bg-card);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.kpi:hover,
+.analytics-card:hover,
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   🔘 BOTONES
+   ========================= */
+
+button,
+.primary-btn,
+.filter-btn,
+.gnav-btn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.primary-btn:hover,
+.filter-btn:hover,
+.gnav-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--primary-light), var(--accent));
+}
+
+/* BOTÓN ACTIVO */
+.filter-btn.active {
+    background: var(--accent);
+}
+
+/* =========================
+   📊 TABLAS
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+}
+
+/* =========================
+   🧾 FORMULARIOS
+   ========================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text-main);
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+/* =========================
+   🧭 NAV GLOBAL
+   ========================= */
+
+.gnav-container {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+}
+
+/* =========================
+   🏷 HEADERS
+   ========================= */
+
+h1, h2, h3 {
+    color: var(--text-main);
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+/* =========================
+   📜 SCROLLBAR PRO
+   ========================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* =========================
+   📱 RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .analytics-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gnav-container {
+        flex-direction: column;
+    }
+}
+
+.theme-toggle-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99999;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    font-size: 18px;
+}

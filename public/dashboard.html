@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="./assets/icons/logo.ico"
+    />
+<div class="logo-container">
+
+    <img
+        src="./assets/logo/dashboard.png"
+        alt="CodePulse Campus Logo"
+        class="main-logo"
+    />
+
+</div>
+    <title>Dashboard | ALGORYTHRA Campus</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/dashboard.css"
+    >
+<link rel="stylesheet" href="./css/theme.css">
+<script src="./js/themeManager.js" defer></script>
+</head>
+
+<body>
+<!-- 🌗 BOTÓN DE TEMA -->
+<button id="themeToggleBtn" class="theme-toggle-btn"></button>
+    <div class="dashboard-layout">
+
+        <aside class="sidebar">
+
+            <h2>
+                ALGORYTHRA
+            </h2>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="practice.html">
+                    Practice
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="leaderboard.html">
+                    Leaderboard
+                </a>
+<a href="class.html">
+                    class
+                </a>
+                <a href="challenges.html">
+                    challenges
+                </a>
+                </a>
+<a href="activity.html">
+                Activity
+                </a>
+                </a>
+<a href="notifications.html">
+                    Notifications
+                </a>
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="dashboard-content">
+<!-- 🔥 NEW: QUICK ACTION BAR -->
+<div class="dashboard-actions">
+
+    <button id="refreshDashboard">🔄 Refresh</button>
+
+    <button id="exportStats">📤 Export</button>
+
+    <button id="resetStats">♻ Reset View</button>
+
+</div>
+
+<!-- 🔥 NEW: MINI INSIGHTS -->
+<section class="dashboard-insights">
+
+    <h3>Smart Insights</h3>
+
+    <ul id="dashboardInsights"></ul>
+
+</section>
+
+<!-- 🔥 NEW: MINI STREAK / PROGRESS BAR -->
+<section class="dashboard-progress">
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressText">Loading progress...</p>
+
+</section>
+            <section class="dashboard-header">
+
+                <h1>
+                    Logical Progress Dashboard
+                </h1>
+
+                <p>
+                    Monitor your real coding evolution.
+                </p>
+
+            </section>
+
+            <section class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        IPL Score
+                    </h3>
+
+                    <div
+                        class="metric-value"
+                        id="iplScore"
+                    >
+                        0
+                    </div>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Total Sessions
+                    </h3>
+
+                    <div
+                        class="metric-value"
+                        id="sessionCount"
+                    >
+                        0
+                    </div>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Problems Solved
+                    </h3>
+
+                    <div
+                        class="metric-value"
+                        id="problemsSolved"
+                    >
+                        0
+                    </div>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Weekly Consistency
+                    </h3>
+
+                    <div
+                        class="metric-value"
+                        id="weeklyConsistency"
+                    >
+                        0%
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="chart-section">
+
+                <canvas id="progressChart"></canvas>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="./libraries/chart.min.js"></script>
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+/* =========================================
+   ACTIVITY PAGE - PRO DESIGN SYSTEM
+   ========================================= */
+
+/* 🔹 CONTENEDOR GENERAL */
+.activity-container {
+    padding: 48px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 🔹 HEADER */
+.activity-header {
+    margin-bottom: 40px;
+}
+
+.activity-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #f8fafc;
+}
+
+.activity-header p {
+    margin-top: 6px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* 🔹 LISTA */
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* 🔹 ITEM (CARD PRO) */
+.activity-item {
+    position: relative;
+    padding: 22px 24px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(30, 41, 59, 0.65),
+        rgba(15, 23, 42, 0.65)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+/* ✨ EFECTO BRILLO SUAVE */
+.activity-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(99, 102, 241, 0.08),
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* 🔥 HOVER PRO */
+.activity-item:hover {
+    transform: translateY(-6px) scale(1.01);
+
+    border: 1px solid rgba(99, 102, 241, 0.25);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.6),
+        0 0 18px rgba(99, 102, 241, 0.15);
+}
+
+.activity-item:hover::before {
+    opacity: 1;
+}
+
+/* 🔹 TIPO */
+.activity-type {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    color: #818cf8;
+
+    display: inline-block;
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+}
+
+/* 🔹 DETALLE */
+.activity-details {
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #cbd5f5;
+    margin-bottom: 10px;
+}
+
+/* 🔹 TIEMPO */
+.activity-time {
+    font-size: 12px;
+    color: #64748b;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* 🔹 PUNTITO VISUAL */
+.activity-time::before {
+    content: "•";
+    color: #6366f1;
+}
+
+/* =========================================
+   🎯 ESTADOS ESPECIALES (PRO UX)
+   ========================================= */
+
+/* 🟢 ÉXITO */
+.activity-item.success {
+    border-left: 3px solid #22c55e;
+}
+
+/* 🔴 ERROR */
+.activity-item.error {
+    border-left: 3px solid #ef4444;
+}
+
+/* 🟡 WARNING */
+.activity-item.warning {
+    border-left: 3px solid #f59e0b;
+}
+
+/* 🔵 INFO */
+.activity-item.info {
+    border-left: 3px solid #3b82f6;
+}
+
+/* =========================================
+   📱 RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+    .activity-container {
+        padding: 30px 20px;
+    }
+
+    .activity-header h2 {
+        font-size: 22px;
+    }
+
+    .activity-item {
+        padding: 18px;
+    }
+}

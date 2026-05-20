@@ -1,0 +1,153 @@
+/* =========================
+   PROFILE PAGE
+   PREMIUM DASHBOARD STYLE
+========================= */
+
+/* ===== PROFILE HEADER INFO ===== */
+
+.profile-info {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-info h1 {
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: -0.5px;
+}
+
+.profile-info p {
+    color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* ===== PROFILE META SECTION (SI LO EXPANDES DESPUÉS) ===== */
+
+.profile-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.profile-meta span {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 8px 12px;
+    border-radius: 999px;
+
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+/* ===== HISTORY CONTAINER ===== */
+
+#historyContainer {
+    display: grid;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+/* ===== HISTORY ITEM CARD ===== */
+
+.history-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 22px;
+
+    padding: 26px;
+
+    backdrop-filter: blur(16px);
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* hover pro */
+.history-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.25);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== TITLE INSIDE HISTORY ===== */
+
+.history-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #f8fafc;
+}
+
+/* ===== DESCRIPTION TEXT ===== */
+
+.history-item p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* ===== TIME / META ===== */
+
+.history-item small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* ===== STATUS BADGE (SI LO USAS) ===== */
+
+.history-status {
+    display: inline-block;
+    margin-top: 10px;
+
+    padding: 6px 10px;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+}
+
+/* ===== ENTRY ANIMATION ===== */
+
+.history-item {
+    animation: fadeInUp 0.5s ease both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .profile-info h1 {
+        font-size: 34px;
+    }
+
+    .history-item {
+        padding: 20px;
+    }
+}

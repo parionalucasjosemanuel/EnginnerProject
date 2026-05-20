@@ -1,0 +1,203 @@
+/* =========================
+   RESPONSIVE SYSTEM
+   PREMIUM BREAKPOINTS
+========================= */
+
+/* ===== 1200px (LAPTOP SMALL) ===== */
+
+@media (max-width: 1200px) {
+
+    .hero-content h2 {
+        font-size: 58px;
+        line-height: 1.1;
+    }
+
+    .sidebar {
+        width: 220px;
+    }
+
+    .dashboard-grid,
+    .analytics-grid {
+        gap: 18px;
+    }
+}
+
+/* ===== 992px (TABLET LANDSCAPE) ===== */
+
+@media (max-width: 992px) {
+
+    .main-header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 24px;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 50px 24px;
+    }
+
+    .hero-content h2 {
+        font-size: 46px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    /* LAYOUT STACK */
+    .dashboard-layout,
+    .practice-layout {
+        flex-direction: column;
+    }
+
+    /* SIDEBAR FULL WIDTH */
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sidebar nav a {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    /* GRIDS SIMPLIFY */
+    .dashboard-grid,
+    .analytics-grid,
+    .profile-stats,
+    .analysis-results,
+    .features-section,
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== 768px (TABLET / LARGE MOBILE) ===== */
+
+@media (max-width: 768px) {
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* GLOBAL PADDING */
+    .dashboard-content,
+    .practice-main,
+    .analytics-container,
+    .profile-container,
+    .leaderboard-container,
+    .admin-container,
+    .page-container {
+        padding: 22px;
+    }
+
+    /* TEXT SCALE */
+    .metric-value {
+        font-size: 36px;
+    }
+
+    /* AUTH */
+    .auth-card {
+        padding: 28px;
+        border-radius: 22px;
+    }
+
+    /* TABLES */
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    /* CARDS */
+    .dashboard-card,
+    .analytics-card,
+    .feature-card,
+    .history-item {
+        padding: 20px;
+    }
+
+    /* CHART FIX */
+    .chart-section {
+        padding: 18px;
+    }
+}
+
+/* ===== 480px (MOBILE) ===== */
+
+@media (max-width: 480px) {
+
+    .hero-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .stat-card h3 {
+        font-size: 32px;
+    }
+
+    .dashboard-header h1,
+    .practice-header h1,
+    .analytics-header h1,
+    .leaderboard-header h1,
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+    }
+
+    /* BUTTONS TOUCH FRIENDLY */
+    button,
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        padding: 14px;
+    }
+
+    /* SIDEBAR MOBILE STACK */
+    .sidebar nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sidebar nav a {
+        text-align: center;
+    }
+}

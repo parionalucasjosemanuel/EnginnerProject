@@ -1,0 +1,243 @@
+/* =========================================
+   DASHBOARD — PREMIUM SAAS UI SYSTEM
+   ========================================= */
+
+/* =========================================
+   🧱 LAYOUT BASE
+   ========================================= */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+
+    background: radial-gradient(circle at top, #0b1220, #020617);
+
+    color: #e2e8f0;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* =========================================
+   📌 SIDEBAR (MODERNO + LIVIANO)
+   ========================================= */
+.sidebar {
+    width: 260px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(17, 24, 39, 0.85),
+        rgba(15, 23, 42, 0.95)
+    );
+
+    backdrop-filter: blur(14px);
+
+    border-right: 1px solid rgba(255,255,255,0.06);
+
+    padding: 28px 22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* logo */
+.sidebar h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* nav */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* links */
+.sidebar nav a {
+    color: #94a3b8;
+    text-decoration: none;
+
+    padding: 10px 12px;
+    border-radius: 10px;
+
+    transition: all 0.25s ease;
+}
+
+/* hover pro */
+.sidebar nav a:hover {
+    background: rgba(99, 102, 241, 0.12);
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+/* =========================================
+   🧠 MAIN CONTENT
+   ========================================= */
+.dashboard-content {
+    flex: 1;
+    padding: 60px 50px;
+}
+
+/* =========================================
+   🧠 HEADER
+   ========================================= */
+.dashboard-header {
+    margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    color: #f8fafc;
+}
+
+.dashboard-header p {
+    margin-top: 10px;
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* =========================================
+   📊 GRID CARDS (RESPIRAN)
+   ========================================= */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 26px;
+
+    margin-bottom: 50px;
+}
+
+/* =========================================
+   💎 DASHBOARD CARD (GLASS + DEPTH)
+   ========================================= */
+.dashboard-card {
+    position: relative;
+
+    padding: 26px;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(30, 41, 59, 0.75),
+        rgba(15, 23, 42, 0.9)
+    );
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+/* hover */
+.dashboard-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.75),
+        0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+/* =========================================
+   🎨 BORDES LATERALES (MÁS LIMPIO)
+   ========================================= */
+.dashboard-card:nth-child(1) {
+    border-left: 4px solid #38bdf8;
+}
+.dashboard-card:nth-child(2) {
+    border-left: 4px solid #22c55e;
+}
+.dashboard-card:nth-child(3) {
+    border-left: 4px solid #f97316;
+}
+.dashboard-card:nth-child(4) {
+    border-left: 4px solid #a855f7;
+}
+
+/* =========================================
+   🏷 TEXTOS
+   ========================================= */
+.dashboard-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #94a3b8;
+
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.metric-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* =========================================
+   📈 CHART SECTION (PROFESIONAL)
+   ========================================= */
+.chart-section {
+    margin-top: 40px;
+
+    padding: 28px;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(30, 41, 59, 0.75),
+        rgba(15, 23, 42, 0.9)
+    );
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    height: 360px;
+}
+
+/* canvas full */
+#progressChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* =========================================
+   📱 RESPONSIVE CLEAN
+   ========================================= */
+@media (max-width: 1024px) {
+    .dashboard-content {
+        padding: 40px 25px;
+    }
+
+    .sidebar {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+}

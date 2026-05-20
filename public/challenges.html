@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.ico"/>
+
+    <title>Challenges | ALGORYTHRA</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/theme.css">
+<script src="./js/themeManager.js" defer></script>
+</head>
+
+<body data-page="challenges">
+<!-- 🌗 BOTÓN DE TEMA -->
+<button id="themeToggleBtn" class="theme-toggle-btn"></button>
+<!-- NAV GLOBAL -->
+<div class="gnav-container">
+    <a href="index.html" class="gnav-btn">🏠 Inicio</a>
+    <a href="dashboard.html" class="gnav-btn">📊 Dashboard</a>
+</div>
+
+<div class="page-container">
+
+    <header class="page-header">
+
+        <h1>Programming Challenges</h1>
+
+        <p>
+            Improve your algorithmic thinking through structured practice.
+        </p>
+
+        <!-- 🔥 NEW: FILTER SYSTEM -->
+        <div class="challenge-filters">
+
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Easy">Easy</button>
+            <button class="filter-btn" data-filter="Medium">Medium</button>
+            <button class="filter-btn" data-filter="Hard">Hard</button>
+
+            <button id="refreshChallenges" class="filter-btn special">
+                🔄 Refresh
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- 🔥 NEW: STATS -->
+    <section class="challenge-stats">
+
+        <div class="stat">
+            <h3>Total</h3>
+            <p id="totalChallenges">0</p>
+        </div>
+
+        <div class="stat">
+            <h3>Solved</h3>
+            <p id="solvedChallenges">0</p>
+        </div>
+
+        <div class="stat">
+            <h3>Hard</h3>
+            <p id="hardChallenges">0</p>
+        </div>
+
+    </section>
+
+    <!-- GRID -->
+    <section class="challenge-grid" id="challengeGrid"></section>
+
+</div>
+
+<script src="./js/challenges.js"></script>
+<!-- 🤖 CHATBOT SYSTEM --> <link rel="stylesheet" href="./css/stylesChatbot.css"> <script src="./js/scriptChatbot.js" defer></script> <!-- BOTÓN --> <div id="chatbotBtn" class="chatbot-float-btn"> <img src="./assets/imagenes/chatbot.jpg" /> </div> <!-- MODAL --> <div id="chatbotModal" class="chatbot-modal"> <div class="chatbot-box"> <h2>Select Language</h2> <button class="chatbot-lang-btn" data-lang="es">Español</button> <button class="chatbot-lang-btn" data-lang="en">English</button> <div id="closeModal" class="chatbot-close">✖ Close</div> </div> <div style="display:flex;gap:10px;padding:10px;background:#111;"> <button id="chatbotMute">🔇</button> <button id="chatbotReplay">🔁</button> <select id="chatbotSpeed"> <option value="0.8">0.8x</option> <option value="1" selected>1x</option> <option value="1.2">1.2x</option> <option value="1.5">1.5x</option> </select> </div> </div> <!-- CHAT --> <div id="chatbotChat" class="chatbot-chat"> <div class="chatbot-header">🤖 ALGORYTHRA Assistant</div> <div id="chatbotBody" class="chatbot-body"></div> </div>
+</body>
+</html>

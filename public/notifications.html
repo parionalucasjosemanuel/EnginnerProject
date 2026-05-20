@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/logo.ico" />
+    <title>Notifications | ALGORYTHRA Campus</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/notifications.css">
+<link rel="stylesheet" href="./css/theme.css">
+<script src="./js/themeManager.js" defer></script>
+</head>
+
+<body data-page="notifications">
+<!-- 🌗 BOTÓN DE TEMA -->
+<button id="themeToggleBtn" class="theme-toggle-btn"></button>
+    <div class="notifications-container">
+
+        <header class="notifications-header">
+            <h1>Notifications</h1>
+            <p>Your latest updates and alerts</p>
+
+            <div class="notification-counter">
+                Unread: <span id="unreadCount">0</span>
+            </div>
+            <div class="notifications-controls">
+
+    <button id="refreshNotifications" class="primary-btn">
+        🔄 Refresh
+    </button>
+
+    <button id="markAllRead" class="primary-btn">
+        ✔ Mark all as read
+    </button>
+
+    <select id="filterNotifications" class="primary-btn">
+        <option value="all">All</option>
+        <option value="unread">Unread</option>
+        <option value="read">Read</option>
+    </select>
+
+    <span id="lastNotifUpdate" style="font-size:12px;opacity:0.6;margin-left:10px;">
+        --
+    </span>
+
+</div>
+        </header>
+
+        <section id="notificationsList" class="notifications-list">
+
+        </section>
+
+    </div>
+
+    <script src="./js/notifications.js"></script>
+<!-- 🤖 CHATBOT SYSTEM --> <link rel="stylesheet" href="./css/stylesChatbot.css"> <script src="./js/scriptChatbot.js" defer></script> <!-- BOTÓN --> <div id="chatbotBtn" class="chatbot-float-btn"> <img src="./assets/imagenes/chatbot.jpg" /> </div> <!-- MODAL --> <div id="chatbotModal" class="chatbot-modal"> <div class="chatbot-box"> <h2>Select Language</h2> <button class="chatbot-lang-btn" data-lang="es">Español</button> <button class="chatbot-lang-btn" data-lang="en">English</button> <div id="closeModal" class="chatbot-close">✖ Close</div> </div> <div style="display:flex;gap:10px;padding:10px;background:#111;"> <button id="chatbotMute">🔇</button> <button id="chatbotReplay">🔁</button> <select id="chatbotSpeed"> <option value="0.8">0.8x</option> <option value="1" selected>1x</option> <option value="1.2">1.2x</option> <option value="1.5">1.5x</option> </select> </div> </div> <!-- CHAT --> <div id="chatbotChat" class="chatbot-chat"> <div class="chatbot-header">🤖 ALGORYTHRA Assistant</div> <div id="chatbotBody" class="chatbot-body"></div> </div>
+</body>
+
+</html>

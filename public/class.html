@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Clases Avanzadas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/stylesclass.css">
+<link rel="stylesheet" href="./css/theme.css">
+<script src="./js/themeManager.js" defer></script>
+</head>
+
+<body data-page="class">
+<!-- 🌗 BOTÓN DE TEMA -->
+<button id="themeToggleBtn" class="theme-toggle-btn"></button>
+<header>
+    <h1>PLATAFORMA AVANZADA DE CLASES</h1>
+    <p>Programación Competitiva & Redes (Nivel Experto)</p>
+</header>
+
+<nav>
+    <button data-sec="cpp">C++</button>
+<button data-sec="java">Java</button>
+<button data-sec="python">Python</button>
+<button data-sec="redes">Redes & Cisco</button>
+</nav>
+
+<main>
+
+<!-- ================= C++ ================= -->
+<section id="cpp" class="sec">
+
+<h2>Programación Competitiva en C++</h2>
+
+<img src="assets/imagenes/clogo.png">
+
+<!-- CLASE 1 -->
+<div class="class">
+
+<h3>Clase 1: Complejidad Algorítmica y STL</h3>
+
+<h4>📘 TEORÍA COMPLETA</h4>
+<p>
+La complejidad algorítmica define cuánto tiempo tarda un algoritmo en ejecutarse dependiendo del tamaño de entrada.
+En programación competitiva esto es CRÍTICO porque los jueces tienen límites estrictos de tiempo (1–3 segundos).
+</p>
+
+<p>
+Conceptos fundamentales:
+</p>
+
+<ul>
+<li><b>O(1)</b> → constante (acceso directo)</li>
+<li><b>O(log n)</b> → búsqueda binaria</li>
+<li><b>O(n)</b> → recorrido simple</li>
+<li><b>O(n log n)</b> → algoritmos eficientes de ordenamiento</li>
+<li><b>O(n²)</b> → doble bucle (limitado)</li>
+</ul>
+
+<p>
+La STL (Standard Template Library) es clave:
+</p>
+
+<ul>
+<li>vector → arrays dinámicos</li>
+<li>map → hashing + orden</li>
+<li>set → valores únicos ordenados</li>
+<li>priority_queue → heap</li>
+</ul>
+
+<h4>🧠 EJEMPLO REAL</h4>
+<pre>
+vector<int> v = {5,2,8};
+sort(v.begin(), v.end());
+</pre>
+
+<h4>🧩 PROBLEMAS</h4>
+<ul>
+<li>Two Sum optimizado</li>
+<li>Búsqueda binaria</li>
+<li>Frecuencias con map</li>
+</ul>
+
+<h4>⏱ SESIÓN</h4>
+<p>
+Entrenamiento de 2 horas resolviendo problemas progresivos con límite de tiempo real.
+</p>
+
+<h4>🏆 CONTEST</h4>
+<p>
+Simulación Codeforces Div2 (problemas A–D).
+</p>
+
+<h4>🔍 ANÁLISIS</h4>
+<p>
+Se revisan errores comunes:
+- TLE (Time Limit Exceeded)
+- WA (Wrong Answer)
+- Uso incorrecto de estructuras
+</p>
+
+<h4>🌐 ENLACES</h4>
+<a href="https://codeforces.com/problemset" target="_blank">Problemas Codeforces</a>
+<a href="https://atcoder.jp" target="_blank">AtCoder</a>
+
+</div>
+
+<!-- CLASE 2 -->
+<div class="class">
+
+<h3>Clase 2: Grafos (BFS, DFS, Dijkstra)</h3>
+
+<img src="assets/imagenes/clase2.png">
+
+<h4>📘 TEORÍA</h4>
+<p>
+Un grafo es una estructura que modela relaciones entre nodos.
+Se usa en redes, rutas, juegos, etc.
+</p>
+
+<p>
+Algoritmos principales:
+</p>
+
+<ul>
+<li><b>DFS</b>: exploración profunda (recursivo)</li>
+<li><b>BFS</b>: exploración por niveles</li>
+<li><b>Dijkstra</b>: camino mínimo</li>
+</ul>
+
+<h4>🧠 COMPLEJIDAD</h4>
+<ul>
+<li>BFS/DFS → O(V + E)</li>
+<li>Dijkstra → O((V+E) log V)</li>
+</ul>
+
+<h4>🧩 PROBLEMAS</h4>
+<ul>
+<li>Labyrinth</li>
+<li>Shortest Path</li>
+<li>Connected Components</li>
+</ul>
+
+<h4>🌐 ENLACES</h4>
+<a href="https://cp-algorithms.com/graph/" target="_blank">Guía Grafos</a>
+
+</div>
+
+<!-- CLASE 3 -->
+<div class="class">
+<h3>Clase 3: Programación Dinámica</h3>
+
+<img src="assets/imagenes/programaciondinamica.png">
+
+<p>
+La programación dinámica resuelve problemas complejos dividiéndolos en subproblemas.
+</p>
+
+<p>
+Ejemplo clásico:
+</p>
+
+<pre>
+dp[i] = dp[i-1] + dp[i-2];
+</pre>
+
+<p>
+Aplicaciones:
+- Knapsack
+- LIS
+- DP en grafos
+</p>
+
+</div>
+
+</section>
+<!-- ================= JAVA ================= -->
+<section id="java" class="sec">
+
+<h2>Programación Competitiva en Java</h2>
+
+<img src="assets/imagenes/javalogo.png">
+
+<!-- CLASE 1 -->
+<div class="class">
+<h3>Clase 1: Entrada/Salida Rápida y Estructuras</h3>
+
+<h4>📘 TEORÍA COMPLETA</h4>
+<p>
+En Java, la velocidad de entrada/salida es crítica. Usar Scanner puede causar TLE.
+Se recomienda:
+</p>
+
+<ul>
+<li><b>BufferedReader</b> para lectura rápida</li>
+<li><b>PrintWriter</b> para salida eficiente</li>
+</ul>
+
+<pre>
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String[] input = br.readLine().split(" ");
+</pre>
+
+<p>
+Estructuras importantes:
+</p>
+<ul>
+<li>ArrayList → listas dinámicas</li>
+<li>HashMap → búsqueda O(1)</li>
+<li>TreeMap → ordenado</li>
+<li>PriorityQueue → heaps</li>
+</ul>
+
+<h4>🧩 PROBLEMAS</h4>
+<ul>
+<li>Conteo de frecuencias</li>
+<li>Ordenamientos personalizados</li>
+</ul>
+
+<h4>🏆 CONTEST</h4>
+<p>Simulación en AtCoder usando Java.</p>
+
+<h4>🌐 ENLACES</h4>
+<a href="https://atcoder.jp" target="_blank">AtCoder</a>
+
+</div>
+
+<!-- CLASE 2 -->
+<div class="class">
+<h3>Clase 2: Grafos en Java</h3>
+
+<p>
+Implementación usando listas de adyacencia:
+</p>
+
+<pre>
+ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+</pre>
+
+<p>
+Algoritmos:
+</p>
+
+<ul>
+<li>BFS → Queue</li>
+<li>DFS → Recursión</li>
+<li>Dijkstra → PriorityQueue</li>
+</ul>
+
+<p>
+Optimización: evitar objetos innecesarios para mejorar rendimiento.
+</p>
+</div>
+
+<!-- CLASE 3 -->
+<div class="class">
+<h3>Clase 3: Programación Dinámica</h3>
+
+<p>
+Uso de arrays para DP:
+</p>
+
+<pre>
+int[] dp = new int[n];
+</pre>
+
+<p>
+Problemas clásicos:
+</p>
+
+<ul>
+<li>Knapsack</li>
+<li>Longest Increasing Subsequence</li>
+<li>DP en strings</li>
+</ul>
+
+</div>
+
+<!-- CLASE 4 -->
+<div class="class">
+<h3>Clase 4: Greedy y Sorting</h3>
+
+<p>
+Uso de Comparator:
+</p>
+
+<pre>
+Arrays.sort(arr, (a,b) -> a - b);
+</pre>
+
+<p>
+Casos:
+</p>
+<ul>
+<li>Interval scheduling</li>
+<li>Minimización de costos</li>
+</ul>
+
+</div>
+
+<!-- CLASE 5 -->
+<div class="class">
+<h3>Clase 5: Optimización y Tricks</h3>
+
+<p>
+Técnicas avanzadas:
+</p>
+
+<ul>
+<li>Bitmasking</li>
+<li>Fast exponentiation</li>
+<li>Prefix sums</li>
+</ul>
+
+<p>
+Clave en Java: evitar overhead de objetos.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= PYTHON ================= -->
+<section id="python" class="sec">
+
+<h2>Programación Competitiva en Python</h2>
+
+<img src="assets/imagenes/pythonlogo.png">
+
+<!-- CLASE 1 -->
+<div class="class">
+<h3>Clase 1: Sintaxis y Entrada Rápida</h3>
+
+<h4>📘 TEORÍA</h4>
+<p>
+Python es más lento que C++ pero muy flexible.
+Optimización clave:
+</p>
+
+<pre>
+import sys
+input = sys.stdin.readline
+</pre>
+
+<p>
+Estructuras clave:
+</p>
+
+<ul>
+<li>list → dinámico</li>
+<li>dict → hash</li>
+<li>set → único</li>
+</ul>
+
+</div>
+
+<!-- CLASE 2 -->
+<div class="class">
+<h3>Clase 2: Algoritmos y Librerías</h3>
+
+<p>
+Uso de librerías:
+</p>
+
+<ul>
+<li>heapq → priority queue</li>
+<li>bisect → búsqueda binaria</li>
+<li>collections → estructuras avanzadas</li>
+</ul>
+
+<pre>
+import heapq
+heapq.heappush(h, x)
+</pre>
+
+</div>
+
+<!-- CLASE 3 -->
+<div class="class">
+<h3>Clase 3: Programación Dinámica</h3>
+
+<p>
+Python facilita DP con listas:
+</p>
+
+<pre>
+dp = [0]*n
+</pre>
+
+<p>
+Ejemplos:
+</p>
+
+<ul>
+<li>Fibonacci</li>
+<li>Knapsack</li>
+</ul>
+
+</div>
+
+<!-- CLASE 4 -->
+<div class="class">
+<h3>Clase 4: Grafos</h3>
+
+<p>
+Representación:
+</p>
+
+<pre>
+graph = [[] for _ in range(n)]
+</pre>
+
+<p>
+Algoritmos:
+</p>
+
+<ul>
+<li>BFS → deque</li>
+<li>DFS → recursión</li>
+</ul>
+
+</div>
+
+<!-- CLASE 5 -->
+<div class="class">
+<h3>Clase 5: Optimización</h3>
+
+<p>
+Técnicas:
+</p>
+
+<ul>
+<li>List comprehensions</li>
+<li>Uso eficiente de memoria</li>
+<li>Evitar loops innecesarios</li>
+</ul>
+
+<p>
+Python es ideal para problemas de lógica compleja.
+</p>
+
+<a href="https://leetcode.com" target="_blank">LeetCode</a>
+
+</div>
+
+</section>
+<!-- ================= REDES ================= -->
+<section id="redes" class="sec">
+
+<h2>Redes y Cisco</h2>
+
+<img src="assets/imagenes/cisco.webp">
+
+<div class="class">
+
+<h3>Clase 1: Modelo OSI</h3>
+
+<img src="assets/imagenes/osi.webp">
+
+<p>
+El modelo OSI es un estándar conceptual de 7 capas.
+</p>
+
+<ul>
+<li>Física</li>
+<li>Enlace</li>
+<li>Red</li>
+<li>Transporte</li>
+<li>Sesión</li>
+<li>Presentación</li>
+<li>Aplicación</li>
+</ul>
+
+<p>
+Cada capa encapsula información.
+</p>
+
+</div>
+
+<div class="class">
+
+<h3>Clase 2: TCP/IP</h3>
+
+<p>
+TCP garantiza entrega confiable mediante:
+</p>
+
+<ul>
+<li>Handshake</li>
+<li>ACK</li>
+<li>Control de congestión</li>
+</ul>
+
+<p>
+UDP es rápido pero no confiable.
+</p>
+
+</div>
+
+<div class="class">
+
+<h3>Clase 3: Routing</h3>
+
+<p>
+Protocolos:
+</p>
+
+<ul>
+<li>RIP</li>
+<li>OSPF</li>
+<li>BGP</li>
+</ul>
+
+</div>
+
+<div class="class">
+
+<h3>Clase 4: Switching</h3>
+
+<p>
+Conceptos clave:
+</p>
+
+<ul>
+<li>VLANs</li>
+<li>STP</li>
+</ul>
+
+</div>
+
+<div class="class">
+
+<h3>Clase 5: Cisco CLI</h3>
+
+<pre>
+enable
+configure terminal
+interface g0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+</pre>
+
+</div>
+
+<a href="https://www.netacad.com" target="_blank">Cisco Academy</a>
+
+</section>
+
+</main>
+
+<script src="./js/scriptclass.js"></script>
+<!-- 🤖 CHATBOT SYSTEM --> <link rel="stylesheet" href="./css/stylesChatbot.css"> <script src="./js/scriptChatbot.js" defer></script> <!-- BOTÓN --> <div id="chatbotBtn" class="chatbot-float-btn"> <img src="./assets/imagenes/chatbot.jpg" /> </div> <!-- MODAL --> <div id="chatbotModal" class="chatbot-modal"> <div class="chatbot-box"> <h2>Select Language</h2> <button class="chatbot-lang-btn" data-lang="es">Español</button> <button class="chatbot-lang-btn" data-lang="en">English</button> <div id="closeModal" class="chatbot-close">✖ Close</div> </div> <div style="display:flex;gap:10px;padding:10px;background:#111;"> <button id="chatbotMute">🔇</button> <button id="chatbotReplay">🔁</button> <select id="chatbotSpeed"> <option value="0.8">0.8x</option> <option value="1" selected>1x</option> <option value="1.2">1.2x</option> <option value="1.5">1.5x</option> </select> </div> </div> <!-- CHAT --> <div id="chatbotChat" class="chatbot-chat"> <div class="chatbot-header">🤖 ALGORYTHRA Assistant</div> <div id="chatbotBody" class="chatbot-body"></div> </div>
+</body>
+</html>

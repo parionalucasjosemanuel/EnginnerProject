@@ -1,0 +1,182 @@
+/* =========================
+   CLASS MODULE UI
+   PREMIUM EDUCATIONAL STYLE
+========================= */
+
+/* ===== GLOBAL ===== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, sans-serif;
+
+    background: linear-gradient(135deg, #020617, #0f172a, #111827);
+    color: #f8fafc;
+
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    padding: 28px 20px;
+
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* ===== NAV ===== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    margin-top: 14px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    padding: 10px 16px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+
+    backdrop-filter: blur(10px);
+}
+
+button:hover {
+    background: rgba(37, 99, 235, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== SECTIONS ===== */
+
+.sec {
+    display: none;
+
+    padding: 40px 24px;
+
+    max-width: 1100px;
+    margin: auto;
+
+    animation: fadeInUp 0.5s ease both;
+}
+
+/* ===== CLASS CARD ===== */
+
+.class {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    padding: 26px;
+    margin: 24px 0;
+
+    border-radius: 18px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+
+    transition: all 0.3s ease;
+
+    backdrop-filter: blur(14px);
+}
+
+.class:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* ===== IMAGE ===== */
+
+img {
+    max-width: 260px;
+    display: block;
+    margin: 20px auto;
+
+    border-radius: 14px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== CODE BLOCK ===== */
+
+pre {
+    background: rgba(0,0,0,0.6);
+    padding: 16px;
+
+    border-radius: 14px;
+
+    overflow-x: auto;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: #e2e8f0;
+
+    font-family: monospace;
+
+    line-height: 1.6;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== ACTIVE SECTION (SI LO USAS EN JS) ===== */
+
+.sec.active {
+    display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .sec {
+        padding: 24px 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

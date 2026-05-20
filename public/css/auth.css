@@ -1,0 +1,162 @@
+/* =========================================
+   AUTH SYSTEM — PREMIUM UX / SaaS STYLE
+   ========================================= */
+
+/* =========================================
+   🧱 FULL SCREEN LAYOUT
+   ========================================= */
+.auth-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 24px;
+
+    background: radial-gradient(
+        circle at top,
+        #0f172a,
+        #020617
+    );
+}
+
+/* =========================================
+   💎 AUTH CARD (GLASS PREMIUM)
+   ========================================= */
+.auth-card {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 56px 48px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(30, 41, 59, 0.75),
+        rgba(15, 23, 42, 0.85)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+
+    transition: all 0.3s ease;
+}
+
+/* hover sutil premium */
+.auth-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 35px 80px rgba(0, 0, 0, 0.75),
+        0 0 20px rgba(99, 102, 241, 0.12);
+}
+
+/* =========================================
+   🧠 TITULO (MUCHO MÁS IMPACTO)
+   ========================================= */
+.auth-card h1 {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    margin-bottom: 14px;
+
+    background: linear-gradient(90deg, #38bdf8, #6366f1, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================================
+   📄 SUBTITULO
+   ========================================= */
+.auth-card p {
+    color: #94a3b8;
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 36px;
+}
+
+/* =========================================
+   🔐 FOOTER (LINK LOGIN/REGISTER)
+   ========================================= */
+.auth-footer {
+    margin-top: 30px;
+    text-align: center;
+
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* link */
+.auth-footer a {
+    color: #818cf8;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+/* hover link */
+.auth-footer a:hover {
+    color: #a78bfa;
+    text-shadow: 0 0 10px rgba(129, 140, 248, 0.4);
+}
+
+/* =========================================
+   🧩 FORM ENHANCEMENTS (IMPORTANTE)
+   ========================================= */
+.auth-card input {
+    width: 100%;
+    padding: 14px 16px;
+
+    margin-top: 8px;
+    margin-bottom: 18px;
+
+    border-radius: 12px;
+
+    background: rgba(15, 23, 42, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: #e2e8f0;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+/* focus pro */
+.auth-card input:focus {
+    border-color: rgba(99, 102, 241, 0.6);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* labels */
+.auth-card label {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* =========================================
+   📱 RESPONSIVE
+   ========================================= */
+@media (max-width: 600px) {
+    .auth-card {
+        padding: 36px 24px;
+        border-radius: 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 34px;
+    }
+}

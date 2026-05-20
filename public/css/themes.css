@@ -1,0 +1,152 @@
+/* =========================
+   THEME SYSTEM
+   LIGHT MODE PREMIUM
+========================= */
+
+/* ===== LIGHT THEME VARIABLES OVERRIDE ===== */
+
+.light-theme {
+
+    --background-color: #f8fafc;
+    --surface-color: #ffffff;
+    --card-color: rgba(255, 255, 255, 0.9);
+    --border-color: rgba(15, 23, 42, 0.08);
+
+    --text-color: #0f172a;
+    --muted-text: #475569;
+
+    --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* ===== GLOBAL LIGHT BACKGROUND ===== */
+
+.light-theme body {
+
+    background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+    color: var(--text-color);
+}
+
+/* ===== SURFACE ELEMENTS ===== */
+
+.light-theme .dashboard-card,
+.light-theme .feature-card,
+.light-theme .analytics-card,
+.light-theme .profile-card,
+.light-theme .result-card,
+.light-theme .challenge-card,
+.light-theme .auth-card,
+.light-theme .history-item {
+
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+
+    box-shadow: var(--shadow-lg);
+}
+
+/* ===== INPUTS ===== */
+
+.light-theme input,
+.light-theme textarea,
+.light-theme select {
+
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-color);
+
+    border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+/* focus mejorado */
+.light-theme input:focus,
+.light-theme textarea:focus,
+.light-theme select:focus {
+
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+/* ===== SIDEBAR ===== */
+
+.light-theme .sidebar {
+
+    background: rgba(255, 255, 255, 0.85);
+    border-right: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+/* ===== NAV LINKS ===== */
+
+.light-theme .navbar a {
+
+    color: #334155;
+    transition: all 0.2s ease;
+}
+
+.light-theme .navbar a:hover {
+
+    color: #0f172a;
+}
+
+/* ===== HEADER LIGHT ADJUST ===== */
+
+.light-theme .main-header {
+
+    background: rgba(248, 250, 252, 0.85);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+
+    backdrop-filter: blur(14px);
+}
+
+/* ===== TEXT ADJUSTMENTS ===== */
+
+.light-theme .stat-card p,
+.light-theme .feature-card p,
+.light-theme .dashboard-card h3,
+.light-theme .analytics-card h3 {
+
+    color: #475569;
+}
+
+/* ===== TABLES (IMPORTANT FOR LEADERBOARD) ===== */
+
+.light-theme .leaderboard-table {
+
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.light-theme .leaderboard-table th {
+
+    background: rgba(15, 23, 42, 0.05);
+    color: #334155;
+}
+
+.light-theme .leaderboard-table td {
+
+    color: #0f172a;
+}
+
+/* ===== BUTTON ADJUST (OPTIONAL POLISH) ===== */
+
+.light-theme .secondary-btn {
+
+    background: rgba(15, 23, 42, 0.05);
+    color: #0f172a;
+}
+
+.light-theme .secondary-btn:hover {
+
+    background: rgba(15, 23, 42, 0.1);
+}
+
+/* ===== SMOOTH TRANSITION BETWEEN THEMES ===== */
+
+body,
+.dashboard-card,
+.feature-card,
+.analytics-card,
+.sidebar,
+.main-header,
+input,
+textarea,
+select {
+
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}

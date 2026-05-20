@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.ico" />
+
+    <title>ALGORYTHRA</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/themes.css">
+    <link rel="stylesheet" href="stylesclass.css">
+
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <header class="main-header">
+
+        <!-- LOGO + TEXTO CORREGIDO -->
+        <div class="logo-wrapper">
+
+            <img
+                src="./assets/logo/logo.png"
+                alt="CodePulse Campus Logo"
+                class="main-logo"
+            />
+
+            <h1 class="logo-text">
+               ALGORYTHRA
+            </h1>
+
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="practice.html">Practice</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="class.html">Classes</a>
+            <a href="login.html">Login</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CAROUSEL (NO TOCADO, SOLO CORRECTO FORMATO) -->
+    <section class="carousel">
+
+        <button class="nav left" id="prevBtn">❮</button>
+
+        <div class="carousel-wrapper" id="carouselWrapper">
+
+            <div class="carousel-track" id="carouselTrack">
+
+                <img src="./assets/imagenes/programacioncompetitiva.jpg" class="slide">
+                <img src="./assets/imagenes/lenguajes.webp" class="slide">
+                <img src="./assets/imagenes/challenges.png" class="slide">
+                <img src="./assets/imagenes/practica.webp" class="slide">
+
+            </div>
+
+        </div>
+
+        <button class="nav right" id="nextBtn">❯</button>
+
+    </section>
+
+    <main class="hero-section">
+
+        <section class="hero-content fade-in">
+
+            <h2>
+                Measure Your Programming Evolution
+            </h2>
+
+            <p>
+                Advanced analytics platform designed to
+                improve programming habits, logical growth,
+                competitive problem solving, and code quality
+                through intelligent metrics and automated
+                feedback.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="register.html" class="primary-btn">
+                    Start Now
+                </a>
+
+                <a href="dashboard.html" class="secondary-btn">
+                    Explore Dashboard
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="hero-stats slide-up">
+
+            <div class="stat-card">
+                <h3 id="studentsCounter">0</h3>
+                <p>Active Students</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="problemsCounter">0</h3>
+                <p>Problems Solved</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="analysisCounter">0</h3>
+                <p>Code Analysis Executed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="iplCounter">0</h3>
+                <p>Average IPL</p>
+            </div>
+
+        </section>
+
+        <section class="features-section">
+
+            <div class="feature-card">
+                <h3>Intelligent Code Analysis</h3>
+                <p>
+                    Detects loops, modularization,
+                    recursion, complexity estimation,
+                    structures and optimization patterns.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Logical Progress Index</h3>
+                <p>
+                    Calculates real learning consistency,
+                    difficulty progression and logical growth.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Multi-Language Support</h3>
+                <p>
+                    Full support for Python, Java and C++
+                    code practice and analysis.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Personalized Recommendations</h3>
+                <p>
+                    Receive AI-like recommendations based
+                    on actual coding patterns and progress.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="scriptclass.js"></script>
+
+</body>
+
+</html>
