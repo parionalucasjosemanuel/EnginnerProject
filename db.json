@@ -1,0 +1,1609 @@
+{
+  "users": [
+    {
+      "id": "user-001",
+      "username": "alexdev",
+      "email": "alex@codepulse.com",
+      "password": "$2a$10$123456789012345678901uLQ5lH3P9s6W7V8Y1Q2Z3X4C5V6",
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "role": "student",
+      "level": 8,
+      "experience": 1850,
+      "ipl": 51
+    },
+    {
+      "id": "user-002",
+      "username": "mariacodes",
+      "email": "maria@codepulse.com",
+      "password": "$2a$10$ABCDEFGHIJKLMNO1234567uLQ5lH3P9s6W7V8Y1Q2Z3X4",
+      "createdAt": "2026-01-11T12:30:00.000Z",
+      "role": "student",
+      "level": 6,
+      "experience": 1420,
+      "ipl": 39
+    },
+    {
+      "id": "user-003",
+      "username": "jordanalgo",
+      "email": "jordan@codepulse.com",
+      "password": "$2a$10$ZXCVBNMASDFGHJKLQWERTYuLQ5lH3P9s6W7V8Y1Q2",
+      "createdAt": "2026-01-12T15:45:00.000Z",
+      "role": "student",
+      "level": 10,
+      "experience": 2540,
+      "ipl": 75
+    },
+    {
+      "id": "user-004",
+      "username": "sophiaai",
+      "email": "sophia@codepulse.com",
+      "password": "$2a$10$QWERTYUIOPLKJHGFDSAZXuLQ5lH3P9s6W7V8Y1Q2",
+      "createdAt": "2026-01-13T09:20:00.000Z",
+      "role": "student",
+      "level": 5,
+      "experience": 990,
+      "ipl": 30
+    },
+    {
+      "id": "user-005",
+      "username": "victorcpp",
+      "email": "victor@codepulse.com",
+      "password": "$2a$10$MNBVCXZLKJHGFDSAPOIUYuLQ5lH3P9s6W7V8Y1Q2",
+      "createdAt": "2026-01-14T18:10:00.000Z",
+      "role": "student",
+      "level": 7,
+      "experience": 1650,
+      "ipl": 59
+    },
+    {
+      "id": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "username": "micchon",
+      "email": "micchon@gmail.com",
+      "password": "$2a$10$EgDmGJmnMP6Plhy/9/Jcae0804.mB0hlm8abX84U.k2ftfiw.BBTi",
+      "createdAt": "2026-05-03T12:14:14.977Z",
+      "role": "student",
+      "level": 20,
+      "experience": 1000,
+      "ipl": 100
+    },
+    {
+      "id": "7e83767d-f0be-4f09-b8bf-1315784c2293",
+      "username": "micchon2",
+      "email": "micchon2@gmail.com",
+      "password": "$2a$10$VHmok.m7XWx3RZ2NcvyJIeUZ5ya1OBL9WdBmXqq1Ef3iq.V7YYfLS",
+      "createdAt": "2026-05-04T02:13:33.756Z",
+      "role": "student",
+      "level": 1,
+      "experience": 0,
+      "ipl": 0
+    },
+    {
+      "id": "a1fabb3d-c31c-4b6f-8e74-c4d63c1d5f94",
+      "username": "micchon3",
+      "email": "micchon3@gmail.com",
+      "password": "$2a$10$X54yn0dNQYUeUbm2pkZpEuMxxgq.S7SNN82QvzbGOhy0MBjvHQLhe",
+      "createdAt": "2026-05-05T11:56:41.867Z",
+      "role": "student",
+      "level": 1,
+      "experience": 0,
+      "ipl": 0
+    }
+  ],
+  "sessions": [
+    {
+      "id": "session-001",
+      "userId": "user-001",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": 120,
+      "difficultyScore": 8,
+      "createdAt": "2026-02-01T11:00:00.000Z"
+    },
+    {
+      "id": "session-002",
+      "userId": "user-002",
+      "language": "Java",
+      "topic": "Recursion",
+      "studyTime": 90,
+      "difficultyScore": 7,
+      "createdAt": "2026-02-02T13:00:00.000Z"
+    },
+    {
+      "id": "session-003",
+      "userId": "user-003",
+      "language": "C++",
+      "topic": "Graphs",
+      "studyTime": 180,
+      "difficultyScore": 10,
+      "createdAt": "2026-02-03T15:00:00.000Z"
+    },
+    {
+      "id": "session-004",
+      "userId": "user-004",
+      "language": "Python",
+      "topic": "Searching",
+      "studyTime": 70,
+      "difficultyScore": 6,
+      "createdAt": "2026-02-04T17:00:00.000Z"
+    },
+    {
+      "id": "session-005",
+      "userId": "user-005",
+      "language": "Java",
+      "topic": "Dynamic Programming",
+      "studyTime": 140,
+      "difficultyScore": 9,
+      "createdAt": "2026-02-05T19:00:00.000Z"
+    },
+    {
+      "id": "638755cb-0d03-4932-ba19-46bf23a66d49",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "2",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-03T12:15:42.810Z"
+    },
+    {
+      "id": "96178532-476b-4b35-94f7-355e9beb51b0",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Java",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-03T12:17:45.513Z"
+    },
+    {
+      "id": "688e1a99-e3d0-4d91-8784-233cd3bb8350",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Java",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-03T12:17:52.853Z"
+    },
+    {
+      "id": "16db6245-2cd4-46b4-b5de-28bab56c403d",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-03T13:24:10.752Z"
+    },
+    {
+      "id": "644e697d-004e-4656-bec6-3952d5ca81b6",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-03T13:25:29.926Z"
+    },
+    {
+      "id": "886e9676-54ce-4975-82f2-bda4d063c36a",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-03T13:26:56.961Z"
+    },
+    {
+      "id": "c84d8a30-92c8-4897-9360-df9ca3522f41",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:22:37.756Z"
+    },
+    {
+      "id": "75c9774a-e208-415a-9d1d-00597ef78f53",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:23:50.226Z"
+    },
+    {
+      "id": "a0969735-3f9b-4263-b97d-8e457b10fef6",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T01:33:02.175Z"
+    },
+    {
+      "id": "26741bb5-81ba-4201-9175-932631e5d155",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T01:33:05.581Z"
+    },
+    {
+      "id": "c46012a6-068b-421b-9292-6f264b21ff71",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T01:33:13.914Z"
+    },
+    {
+      "id": "54b7fa09-e308-411c-8a9f-a10edacf722c",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T01:33:34.041Z"
+    },
+    {
+      "id": "fc588dd2-7a81-4085-aa19-779420b6c1ab",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:34:06.290Z"
+    },
+    {
+      "id": "64e962e1-46d1-4fa1-beba-a602e52598e9",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:34:07.234Z"
+    },
+    {
+      "id": "cb3e02c2-2170-4c68-b627-7459e52b6a68",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Recursion",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T01:35:42.212Z"
+    },
+    {
+      "id": "0b38e369-6ed4-4ca9-9cca-1ad647047b7e",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:36:30.230Z"
+    },
+    {
+      "id": "718d2ec2-cae2-468e-a6f4-577b2ab88208",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:39:03.673Z"
+    },
+    {
+      "id": "3950aa5c-41b3-4619-9623-2221e824034f",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "3",
+      "difficultyScore": "10",
+      "createdAt": "2026-05-04T01:39:40.058Z"
+    },
+    {
+      "id": "c7f03d67-c5cb-4b15-8eed-35313fae1362",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "3",
+      "difficultyScore": "10",
+      "createdAt": "2026-05-04T01:39:51.087Z"
+    },
+    {
+      "id": "aab8b411-9305-46d1-b9b7-e88db0378157",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T01:47:59.387Z"
+    },
+    {
+      "id": "fb16aff0-aa62-4e6c-bc7f-b3b9525b20a3",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-04T01:48:23.012Z"
+    },
+    {
+      "id": "cced362d-9901-44d6-b93c-1d6e1f3773e4",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-04T01:48:23.022Z"
+    },
+    {
+      "id": "0e699d48-f314-403b-bc47-aa1c61c91c04",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "3",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-04T02:26:55.661Z"
+    },
+    {
+      "id": "6f960608-5ad1-4a21-bb27-6f29e1e83369",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "2",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T02:27:09.581Z"
+    },
+    {
+      "id": "4b1d10cd-1b50-4a0b-b757-a81313154451",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T02:56:46.556Z"
+    },
+    {
+      "id": "f86df540-3230-431a-834a-9e8d83f98681",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T02:56:50.496Z"
+    },
+    {
+      "id": "4deef357-65e9-4b5f-a17b-310dfbb67e45",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "10",
+      "difficultyScore": "3",
+      "createdAt": "2026-05-04T02:56:53.643Z"
+    },
+    {
+      "id": "e10922ec-1e84-484e-a4e7-e56ee8f694e3",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T03:05:28.269Z"
+    },
+    {
+      "id": "bed2ae49-ea6b-4ebc-b6a4-c9c9ad142f61",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T09:22:27.894Z"
+    },
+    {
+      "id": "349aa815-4081-4679-9007-f87e983027f8",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Challenges",
+      "studyTime": 45,
+      "difficultyScore": 8,
+      "createdAt": "2026-05-04T09:23:02.741Z"
+    },
+    {
+      "id": "cb196fac-468f-4bc7-95a9-0abc93a323d9",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "3",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-04T09:24:36.184Z"
+    },
+    {
+      "id": "ca69a850-bce4-447c-8c87-bc9f6e15433f",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "language": "Python",
+      "topic": "Arrays",
+      "studyTime": "2",
+      "difficultyScore": "1",
+      "createdAt": "2026-05-08T09:03:59.516Z"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "submission-001",
+      "userId": "user-001",
+      "challengeId": "challenge-001",
+      "language": "Python",
+      "status": "Accepted",
+      "executionTime": 32,
+      "memoryUsage": 14,
+      "createdAt": "2026-02-06T10:00:00.000Z"
+    },
+    {
+      "id": "submission-002",
+      "userId": "user-002",
+      "challengeId": "challenge-002",
+      "language": "Java",
+      "status": "Accepted",
+      "executionTime": 45,
+      "memoryUsage": 20,
+      "createdAt": "2026-02-06T11:00:00.000Z"
+    },
+    {
+      "id": "submission-003",
+      "userId": "user-003",
+      "challengeId": "challenge-004",
+      "language": "C++",
+      "status": "Accepted",
+      "executionTime": 18,
+      "memoryUsage": 12,
+      "createdAt": "2026-02-06T12:00:00.000Z"
+    },
+    {
+      "id": "submission-004",
+      "userId": "user-004",
+      "challengeId": "challenge-003",
+      "language": "Python",
+      "status": "Wrong Answer",
+      "executionTime": 50,
+      "memoryUsage": 16,
+      "createdAt": "2026-02-06T13:00:00.000Z"
+    },
+    {
+      "id": "submission-005",
+      "userId": "user-005",
+      "challengeId": "challenge-002",
+      "language": "Java",
+      "status": "Accepted",
+      "executionTime": 38,
+      "memoryUsage": 18,
+      "createdAt": "2026-02-06T14:00:00.000Z"
+    }
+  ],
+  "analytics": [
+    {
+      "id": "analytics-001",
+      "userId": "user-001",
+      "weeklyHours": 14,
+      "averageDifficulty": 8,
+      "iplGrowth": 12
+    },
+    {
+      "id": "analytics-002",
+      "userId": "user-002",
+      "weeklyHours": 10,
+      "averageDifficulty": 7,
+      "iplGrowth": 8
+    },
+    {
+      "id": "analytics-003",
+      "userId": "user-003",
+      "weeklyHours": 20,
+      "averageDifficulty": 10,
+      "iplGrowth": 18
+    },
+    {
+      "id": "analytics-004",
+      "userId": "user-004",
+      "weeklyHours": 8,
+      "averageDifficulty": 6,
+      "iplGrowth": 5
+    },
+    {
+      "id": "analytics-005",
+      "userId": "user-005",
+      "weeklyHours": 16,
+      "averageDifficulty": 9,
+      "iplGrowth": 14
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "recommendation-001",
+      "userId": "user-001",
+      "message": "Practice graph traversal algorithms."
+    },
+    {
+      "id": "recommendation-002",
+      "userId": "user-002",
+      "message": "Improve recursion optimization techniques."
+    },
+    {
+      "id": "recommendation-003",
+      "userId": "user-003",
+      "message": "Explore advanced dynamic programming."
+    },
+    {
+      "id": "recommendation-004",
+      "userId": "user-004",
+      "message": "Strengthen binary search concepts."
+    },
+    {
+      "id": "recommendation-005",
+      "userId": "user-005",
+      "message": "Optimize nested loop structures."
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "userId": "user-003",
+      "ipl": 97
+    },
+    {
+      "rank": 2,
+      "userId": "user-001",
+      "ipl": 92
+    },
+    {
+      "rank": 3,
+      "userId": "user-005",
+      "ipl": 88
+    },
+    {
+      "rank": 4,
+      "userId": "user-002",
+      "ipl": 84
+    },
+    {
+      "rank": 5,
+      "userId": "user-004",
+      "ipl": 75
+    }
+  ],
+  "badges": [
+    {
+      "id": "badge-001",
+      "userId": "user-001",
+      "title": "Array Master"
+    },
+    {
+      "id": "badge-002",
+      "userId": "user-002",
+      "title": "Recursion Expert"
+    },
+    {
+      "id": "badge-003",
+      "userId": "user-003",
+      "title": "Graph Champion"
+    },
+    {
+      "id": "badge-004",
+      "userId": "user-004",
+      "title": "Search Specialist"
+    },
+    {
+      "id": "badge-005",
+      "userId": "user-005",
+      "title": "Optimization Guru"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-001",
+      "userId": "user-001",
+      "action": "Completed challenge",
+      "details": "Solved Two Sum in Python.",
+      "createdAt": "2026-02-10T10:15:00.000Z"
+    },
+    {
+      "id": "log-002",
+      "userId": "user-002",
+      "action": "Started practice session",
+      "details": "Practicing recursion algorithms.",
+      "createdAt": "2026-02-10T11:20:00.000Z"
+    },
+    {
+      "id": "log-003",
+      "userId": "user-003",
+      "action": "Reached new IPL",
+      "details": "IPL increased to 97.",
+      "createdAt": "2026-02-10T12:30:00.000Z"
+    },
+    {
+      "id": "log-004",
+      "userId": "user-004",
+      "action": "Viewed analytics",
+      "details": "Accessed weekly progress charts.",
+      "createdAt": "2026-02-10T13:40:00.000Z"
+    },
+    {
+      "id": "log-005",
+      "userId": "user-005",
+      "action": "Earned badge",
+      "details": "Unlocked Optimization Guru badge.",
+      "createdAt": "2026-02-10T14:50:00.000Z"
+    },
+    {
+      "id": "ba35e4c5-160f-40c5-ae4e-914a38a65eb6",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:22:37.747Z"
+    },
+    {
+      "id": "59f25055-8ef0-48ad-909c-e3722432a46d",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:22:37.756Z"
+    },
+    {
+      "id": "65c5b72e-b81f-4431-978a-854a7868bd82",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T01:23:50.211Z"
+    },
+    {
+      "id": "47d4b8f5-f800-449a-8cd7-833459355e14",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:23:50.227Z"
+    },
+    {
+      "id": "6f816a8c-5f32-4414-bd04-455592b0bbbb",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Recursion in Python",
+      "createdAt": "2026-05-04T01:33:02.176Z"
+    },
+    {
+      "id": "4042ab0a-6bf3-4ad8-96bf-31d60c5e524b",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:33:02.184Z"
+    },
+    {
+      "id": "3565f2fb-818e-4e43-88c1-8b8ca72733d2",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Recursion in Python",
+      "createdAt": "2026-05-04T01:33:05.582Z"
+    },
+    {
+      "id": "5cbef03a-2459-4256-9872-be6bbf359715",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:33:05.591Z"
+    },
+    {
+      "id": "212e7f12-9179-4cdb-a506-c68698c84423",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Recursion in Python",
+      "createdAt": "2026-05-04T01:33:13.914Z"
+    },
+    {
+      "id": "51feeabf-b2e0-475c-a126-283e0376638b",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:33:13.931Z"
+    },
+    {
+      "id": "4d6a4c41-be5e-4b47-98d3-2fcd27589b84",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Recursion in Python",
+      "createdAt": "2026-05-04T01:33:34.041Z"
+    },
+    {
+      "id": "75ba2b03-e2c5-4bfb-ab04-8e58dc24ab44",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:33:34.055Z"
+    },
+    {
+      "id": "ee2d2d57-28ca-4650-8f9f-244e66854f58",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:34:06.280Z"
+    },
+    {
+      "id": "d51d48c2-a94e-42b9-ab0b-eebc19cfce84",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:34:06.290Z"
+    },
+    {
+      "id": "1b5a05f1-5b79-4d16-8559-045144e480ab",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:34:07.222Z"
+    },
+    {
+      "id": "9efb7c96-2b39-494d-970b-1ca5953af9d1",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:34:07.235Z"
+    },
+    {
+      "id": "01a9c7fb-edce-4e4e-b2de-ed5a6c60d4e8",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Recursion in Python",
+      "createdAt": "2026-05-04T01:35:42.213Z"
+    },
+    {
+      "id": "29f03a8b-b342-4dfa-9211-10868130f756",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:35:42.221Z"
+    },
+    {
+      "id": "c7a9e1e1-b4b7-4648-89d0-9c96cd3260d7",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:36:30.221Z"
+    },
+    {
+      "id": "5e18666b-0988-48e8-bdc7-04e41f90b18b",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:36:30.230Z"
+    },
+    {
+      "id": "85d792a0-79b2-4f8f-8c3b-da4fa62a23cd",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (undefined)",
+      "createdAt": "2026-05-04T01:39:03.663Z"
+    },
+    {
+      "id": "9d60d4bb-2954-4c11-a197-b8faa579283a",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:39:03.673Z"
+    },
+    {
+      "id": "9c66fcad-0a21-4d5b-b9db-8b55e9a32921",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T01:39:40.058Z"
+    },
+    {
+      "id": "02ccedb1-8f6c-47a0-a720-a1f7f3bd2807",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (undefined)",
+      "createdAt": "2026-05-04T01:39:40.069Z"
+    },
+    {
+      "id": "79680a8d-4152-4b9e-8612-832f62e5be95",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T01:39:51.087Z"
+    },
+    {
+      "id": "97a4b4fe-e60b-4b5d-aa94-bf01fb9a1636",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T01:39:51.102Z"
+    },
+    {
+      "id": "dbf0fc2a-4758-4a83-ae54-1ccfe810793f",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T01:47:59.379Z"
+    },
+    {
+      "id": "f9d8a154-eb4f-4efb-8fe0-3096942f3880",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T01:47:59.387Z"
+    },
+    {
+      "id": "a7167bf9-3696-4631-91cd-52b18432cb5f",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T01:48:23.013Z"
+    },
+    {
+      "id": "80d09b8f-8e1b-4f8a-b192-402ed5f081e3",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T01:48:23.022Z"
+    },
+    {
+      "id": "8aaac09e-32a3-482a-9f7c-5eae6b64577b",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T01:48:23.030Z"
+    },
+    {
+      "id": "932a7f48-54fc-4503-9fa7-2ef3856a4e9d",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T01:48:23.038Z"
+    },
+    {
+      "id": "d5787698-ae35-405a-9495-4904b35076b5",
+      "userId": "7e83767d-f0be-4f09-b8bf-1315784c2293",
+      "action": "Account Created",
+      "details": "User registered in CodePulse Campus",
+      "createdAt": "2026-05-04T02:13:33.756Z"
+    },
+    {
+      "id": "368f8ffe-ecf5-4b4e-a6f6-d07b81ef59e9",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T02:26:55.661Z"
+    },
+    {
+      "id": "a6e9325a-fe2f-451f-ad9e-bb9651883c9b",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T02:26:55.669Z"
+    },
+    {
+      "id": "2d211f2c-4d07-46cc-96a3-7384a9b9ef16",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T02:27:09.582Z"
+    },
+    {
+      "id": "41d3be34-fd15-4fa6-b6e4-2ed3432cd593",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T02:27:09.594Z"
+    },
+    {
+      "id": "1b82477a-84c6-45d2-b32b-d3706a21a9aa",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T02:56:46.557Z"
+    },
+    {
+      "id": "36c169bc-9c98-4ce5-b509-a544f15baca0",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T02:56:46.564Z"
+    },
+    {
+      "id": "391dc713-f58b-4bac-8e70-5481cc18c0e7",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T02:56:50.496Z"
+    },
+    {
+      "id": "176fda59-9b98-4cbd-baaa-1d60b34f2afc",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T02:56:50.508Z"
+    },
+    {
+      "id": "ad2ccb8a-4681-470a-88b9-12b950276800",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T02:56:53.644Z"
+    },
+    {
+      "id": "04935f85-9083-4155-a714-2fc47ce86068",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T02:56:53.655Z"
+    },
+    {
+      "id": "84583d60-c375-4acf-a887-de7f51ca28c9",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T03:05:28.261Z"
+    },
+    {
+      "id": "8060aa61-a914-4257-86d1-64c17fd2e111",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T03:05:28.269Z"
+    },
+    {
+      "id": "53bfe3c2-e0a5-42a1-b32d-e940400b777d",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T09:22:27.882Z"
+    },
+    {
+      "id": "20861d4c-11e3-4352-a64d-793269a1c53d",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T09:22:27.894Z"
+    },
+    {
+      "id": "b514c3ed-2b45-4a37-a865-81dffc95b50f",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-04T09:23:02.728Z"
+    },
+    {
+      "id": "8d1f7d35-e354-4fad-9a30-677ddd3bcbd1",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Challenges in Python",
+      "createdAt": "2026-05-04T09:23:02.741Z"
+    },
+    {
+      "id": "20da6c2c-4893-4975-b7ee-3eb6e8e061a7",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-04T09:24:36.184Z"
+    },
+    {
+      "id": "0afefef9-0a31-4db7-91e3-8e8185775ccd",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(n))",
+      "createdAt": "2026-05-04T09:24:36.197Z"
+    },
+    {
+      "id": "d6c95571-95f0-4e13-9c68-ea1d0b9cbf6c",
+      "userId": "a1fabb3d-c31c-4b6f-8e74-c4d63c1d5f94",
+      "action": "Account Created",
+      "details": "User registered in CodePulse Campus",
+      "createdAt": "2026-05-05T11:56:41.867Z"
+    },
+    {
+      "id": "07c0b09d-fc90-42f7-b2e5-6005384240de",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Practice Session",
+      "details": "Solved Arrays in Python",
+      "createdAt": "2026-05-08T09:03:59.517Z"
+    },
+    {
+      "id": "5a2e2efb-4d29-4e4e-8f6c-cc9865225377",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "action": "Code Analysis",
+      "details": "Analyzed Python code (O(1))",
+      "createdAt": "2026-05-08T09:03:59.526Z"
+    }
+  ],
+  "practiceHistory": [
+    {
+      "id": "practice-001",
+      "userId": "user-001",
+      "language": "Python",
+      "topic": "Arrays",
+      "duration": 120,
+      "score": 91
+    },
+    {
+      "id": "practice-002",
+      "userId": "user-002",
+      "language": "Java",
+      "topic": "Recursion",
+      "duration": 90,
+      "score": 85
+    },
+    {
+      "id": "practice-003",
+      "userId": "user-003",
+      "language": "C++",
+      "topic": "Graphs",
+      "duration": 180,
+      "score": 98
+    },
+    {
+      "id": "practice-004",
+      "userId": "user-004",
+      "language": "Python",
+      "topic": "Searching",
+      "duration": 70,
+      "score": 74
+    },
+    {
+      "id": "practice-005",
+      "userId": "user-005",
+      "language": "Java",
+      "topic": "Dynamic Programming",
+      "duration": 140,
+      "score": 89
+    }
+  ],
+  "challengeAttempts": [
+    {
+      "id": "attempt-001",
+      "userId": "user-001",
+      "challengeId": "challenge-001",
+      "attempts": 2,
+      "successful": true,
+      "language": "Python"
+    },
+    {
+      "id": "attempt-002",
+      "userId": "user-002",
+      "challengeId": "challenge-002",
+      "attempts": 3,
+      "successful": true,
+      "language": "Java"
+    },
+    {
+      "id": "attempt-003",
+      "userId": "user-003",
+      "challengeId": "challenge-004",
+      "attempts": 1,
+      "successful": true,
+      "language": "C++"
+    },
+    {
+      "id": "attempt-004",
+      "userId": "user-004",
+      "challengeId": "challenge-003",
+      "attempts": 4,
+      "successful": false,
+      "language": "Python"
+    },
+    {
+      "id": "attempt-005",
+      "userId": "user-005",
+      "challengeId": "challenge-005",
+      "attempts": 2,
+      "successful": true,
+      "language": "Java"
+    }
+  ],
+  "systemMetrics": [
+    {
+      "id": "metric-001",
+      "activeUsers": 124,
+      "totalChallengesSolved": 540,
+      "averageIPL": 82,
+      "recordedAt": "2026-02-10T10:00:00.000Z"
+    },
+    {
+      "id": "metric-002",
+      "activeUsers": 136,
+      "totalChallengesSolved": 590,
+      "averageIPL": 84,
+      "recordedAt": "2026-02-11T10:00:00.000Z"
+    },
+    {
+      "id": "metric-003",
+      "activeUsers": 148,
+      "totalChallengesSolved": 630,
+      "averageIPL": 85,
+      "recordedAt": "2026-02-12T10:00:00.000Z"
+    },
+    {
+      "id": "metric-004",
+      "activeUsers": 155,
+      "totalChallengesSolved": 710,
+      "averageIPL": 87,
+      "recordedAt": "2026-02-13T10:00:00.000Z"
+    },
+    {
+      "id": "metric-005",
+      "activeUsers": 170,
+      "totalChallengesSolved": 780,
+      "averageIPL": 88,
+      "recordedAt": "2026-02-14T10:00:00.000Z"
+    },
+    {
+      "id": "bcf757bb-d9a2-442e-b75e-45e398a87882",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 20,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8,
+      "recordedAt": "2026-05-04T01:35:42.212Z"
+    },
+    {
+      "id": "641f8288-af1e-4de4-b038-dbeed1e35fdc",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 20,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8,
+      "recordedAt": "2026-05-04T01:35:42.222Z"
+    },
+    {
+      "id": "e579184a-3cca-4abd-a7f2-47d635117d9c",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 20,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8,
+      "recordedAt": "2026-05-04T01:36:30.221Z"
+    },
+    {
+      "id": "9b98c2e0-2d3f-411a-8830-ee2fc335d6ed",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 21,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8.3,
+      "recordedAt": "2026-05-04T01:36:30.230Z"
+    },
+    {
+      "id": "afee7545-9b8b-4db3-b1f0-0d4135ae8be8",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 21,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8.3,
+      "recordedAt": "2026-05-04T01:39:03.664Z"
+    },
+    {
+      "id": "cbfbc597-7f14-4912-8661-e072997ebb6b",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 22,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8.6,
+      "recordedAt": "2026-05-04T01:39:03.673Z"
+    },
+    {
+      "id": "a01a65e3-ae98-45df-a180-1d19f96751d1",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 23,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8.899999999999999,
+      "recordedAt": "2026-05-04T01:39:40.058Z"
+    },
+    {
+      "id": "77d53a80-b5f1-4ab4-b159-195c702ba3d4",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 23,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 8.899999999999999,
+      "recordedAt": "2026-05-04T01:39:40.069Z"
+    },
+    {
+      "id": "e02d91c7-e2dd-4db0-b916-1dffd4df3d1f",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 24,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 9.2,
+      "recordedAt": "2026-05-04T01:39:51.087Z"
+    },
+    {
+      "id": "e828e5c6-1d92-4925-a456-080a8f29befc",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 24,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 9.2,
+      "recordedAt": "2026-05-04T01:39:51.102Z"
+    },
+    {
+      "id": "d7f0eaea-fd94-49c2-bac9-e2b355eacce8",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 24,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 9.2,
+      "recordedAt": "2026-05-04T01:47:59.379Z"
+    },
+    {
+      "id": "7a8c236b-4585-4637-a0b8-46ea69363b59",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 25,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 9.5,
+      "recordedAt": "2026-05-04T01:47:59.387Z"
+    },
+    {
+      "id": "05e03c8a-8885-4822-8c6d-4336ac0d165c",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 26,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 9.8,
+      "recordedAt": "2026-05-04T01:48:23.013Z"
+    },
+    {
+      "id": "32c2d748-7fb2-41ec-b3f2-6cb9bd4c6fbb",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 27,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 10.1,
+      "recordedAt": "2026-05-04T01:48:23.022Z"
+    },
+    {
+      "id": "7c0e11a1-9ebe-4a6e-8ece-b592af4b7c66",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 27,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 10.1,
+      "recordedAt": "2026-05-04T01:48:23.030Z"
+    },
+    {
+      "id": "edafbe7f-a09f-49c4-bb73-522aaf801af1",
+      "activeUsers": 1,
+      "totalUsers": 6,
+      "totalSessions": 27,
+      "totalChallengesSolved": 4,
+      "averageIPL": 59,
+      "systemLoadScore": 10.1,
+      "recordedAt": "2026-05-04T01:48:23.038Z"
+    },
+    {
+      "id": "38de1f8f-673d-442e-9f64-48eafefee6fb",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 28,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 10.4,
+      "recordedAt": "2026-05-04T02:26:55.661Z"
+    },
+    {
+      "id": "83804045-9c5f-4864-80b6-c7ab62672773",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 28,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 10.4,
+      "recordedAt": "2026-05-04T02:26:55.670Z"
+    },
+    {
+      "id": "4fe7e52b-97e6-4994-a160-9a5fb629d0f7",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 29,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 10.7,
+      "recordedAt": "2026-05-04T02:27:09.582Z"
+    },
+    {
+      "id": "f8a1ea9c-e312-4586-a587-68d4fbaa2f53",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 29,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 10.7,
+      "recordedAt": "2026-05-04T02:27:09.594Z"
+    },
+    {
+      "id": "4db4e4c9-1abb-4c27-8756-1471373d6f8b",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 30,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11,
+      "recordedAt": "2026-05-04T02:56:46.556Z"
+    },
+    {
+      "id": "3d97b441-44a1-471e-8862-d8c6a432cdaa",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 30,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11,
+      "recordedAt": "2026-05-04T02:56:46.564Z"
+    },
+    {
+      "id": "a966b744-5a6a-46a0-8e5d-9a75c442b2ed",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 31,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.299999999999999,
+      "recordedAt": "2026-05-04T02:56:50.496Z"
+    },
+    {
+      "id": "90838535-4b37-45f9-b293-9190167822d2",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 31,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.299999999999999,
+      "recordedAt": "2026-05-04T02:56:50.509Z"
+    },
+    {
+      "id": "1d86507e-fc2f-46a6-a870-a74a3aae0804",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 32,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.6,
+      "recordedAt": "2026-05-04T02:56:53.644Z"
+    },
+    {
+      "id": "8cb00d48-2902-4a1b-a27e-7472dc90240c",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 32,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.6,
+      "recordedAt": "2026-05-04T02:56:53.655Z"
+    },
+    {
+      "id": "c088bbeb-b991-4b26-9ea4-853202660280",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 32,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.6,
+      "recordedAt": "2026-05-04T03:05:28.261Z"
+    },
+    {
+      "id": "58a0cfb3-45fa-43a0-8c91-ff562c23779e",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 33,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 11.9,
+      "recordedAt": "2026-05-04T03:05:28.269Z"
+    },
+    {
+      "id": "e6d9f33c-69f2-4cb0-857b-4f9056223f10",
+      "activeUsers": 0,
+      "totalUsers": 7,
+      "totalSessions": 33,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 9.9,
+      "recordedAt": "2026-05-04T09:22:27.883Z"
+    },
+    {
+      "id": "35e4364b-66df-4ac0-8a80-7952573ea49d",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 34,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 12.2,
+      "recordedAt": "2026-05-04T09:22:27.894Z"
+    },
+    {
+      "id": "5aaade77-4791-4340-887d-91d4d8b398d5",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 34,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 12.2,
+      "recordedAt": "2026-05-04T09:23:02.728Z"
+    },
+    {
+      "id": "e4eb231c-22fe-4710-afc4-f195156e4c77",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 35,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 12.5,
+      "recordedAt": "2026-05-04T09:23:02.741Z"
+    },
+    {
+      "id": "58955677-a7c3-4b31-93a2-fdec7650934c",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 36,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 12.799999999999999,
+      "recordedAt": "2026-05-04T09:24:36.184Z"
+    },
+    {
+      "id": "7ea920e5-c0d5-4692-bb11-e5dd9ff43b68",
+      "activeUsers": 1,
+      "totalUsers": 7,
+      "totalSessions": 36,
+      "totalChallengesSolved": 4,
+      "averageIPL": 51,
+      "systemLoadScore": 12.799999999999999,
+      "recordedAt": "2026-05-04T09:24:36.197Z"
+    },
+    {
+      "id": "524e8999-ed2b-4d81-81ad-581f741d6a5a",
+      "activeUsers": 1,
+      "totalUsers": 8,
+      "totalSessions": 37,
+      "totalChallengesSolved": 4,
+      "averageIPL": 44,
+      "systemLoadScore": 13.1,
+      "recordedAt": "2026-05-08T09:03:59.516Z"
+    },
+    {
+      "id": "4cd9fe4e-676b-4816-8cd3-fe5e37ea409d",
+      "activeUsers": 1,
+      "totalUsers": 8,
+      "totalSessions": 37,
+      "totalChallengesSolved": 4,
+      "averageIPL": 44,
+      "systemLoadScore": 13.1,
+      "recordedAt": "2026-05-08T09:03:59.526Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notification-001",
+      "userId": "user-001",
+      "title": "New Badge Unlocked",
+      "message": "You earned the Array Master badge.",
+      "read": false
+    },
+    {
+      "id": "notification-002",
+      "userId": "user-002",
+      "title": "Practice Reminder",
+      "message": "Continue improving your recursion skills.",
+      "read": true
+    },
+    {
+      "id": "notification-003",
+      "userId": "user-003",
+      "title": "Leaderboard Update",
+      "message": "You are currently ranked #1 globally.",
+      "read": false
+    },
+    {
+      "id": "notification-004",
+      "userId": "user-004",
+      "title": "Challenge Recommendation",
+      "message": "Try the Binary Search challenge again.",
+      "read": true
+    },
+    {
+      "id": "notification-005",
+      "userId": "user-005",
+      "title": "Performance Improvement",
+      "message": "Your IPL increased by 5 points this week.",
+      "read": false
+    },
+    {
+      "id": "notification-006",
+      "userId": "b0b0e14a-81c7-4324-a16e-ed0d99b72eaf",
+      "title": "Performance Improvement",
+      "message": "Your IPL increased by 5 points this week.",
+      "read": false
+    }
+  ],
+  "challenges": [
+    {
+      "id": "challenge-001",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "topic": "Arrays",
+      "points": 50,
+      "description": "Find two numbers that add up to a target value.",
+      "expectedComplexity": "O(n)",
+      "languages": [
+        "Python",
+        "Java",
+        "C++"
+      ]
+    },
+    {
+      "id": "challenge-002",
+      "title": "Recursive Fibonacci",
+      "difficulty": "Medium",
+      "topic": "Recursion",
+      "points": 120,
+      "description": "Implement fibonacci recursively with optimization.",
+      "expectedComplexity": "O(n)",
+      "languages": [
+        "Python",
+        "Java",
+        "C++"
+      ]
+    },
+    {
+      "id": "challenge-003",
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "topic": "Searching",
+      "points": 70,
+      "description": "Implement binary search efficiently.",
+      "expectedComplexity": "O(log n)",
+      "languages": [
+        "Python",
+        "Java",
+        "C++"
+      ]
+    },
+    {
+      "id": "challenge-004",
+      "title": "Graph Traversal",
+      "difficulty": "Hard",
+      "topic": "Graphs",
+      "points": 300,
+      "description": "Traverse a graph using BFS and DFS.",
+      "expectedComplexity": "O(V + E)",
+      "languages": [
+        "Python",
+        "Java",
+        "C++"
+      ]
+    },
+    {
+      "id": "challenge-005",
+      "title": "Dynamic Coin Change",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming",
+      "points": 250,
+      "description": "Solve the coin change problem efficiently.",
+      "expectedComplexity": "O(n * m)",
+      "languages": [
+        "Python",
+        "Java",
+        "C++"
+      ]
+    }
+  ]
+}
